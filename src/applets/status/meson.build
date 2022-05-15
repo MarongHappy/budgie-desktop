@@ -34,6 +34,7 @@ applet_status_deps = [
     dep_accountsservice,
     dependency('gnome-bluetooth-1.0', version: '>= 3.34.0'),
     dependency('upower-glib', version: '>= 0.99.0'),
+    dependency('libnm', version: '>= 1.22.10'),
     link_libplugin,
     gvc.get_variable('libgvc_dep'),
     meson.get_compiler('c').find_library('m', required: false),
